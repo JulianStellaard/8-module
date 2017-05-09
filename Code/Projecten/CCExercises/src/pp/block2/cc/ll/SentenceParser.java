@@ -6,6 +6,7 @@ import static pp.block2.cc.ll.Sentence.NOUN;
 import static pp.block2.cc.ll.Sentence.VERB;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
@@ -138,7 +139,7 @@ public class SentenceParser implements Parser {
 			System.err.println("Usage: [text]+");
 		} else {
 			for (String text : args) {
-				CharStream stream = CharStreams.fromString(text);
+                CharStream stream = CharStreams.fromString(text);
 				Lexer lexer = new Sentence(stream);
 				try {
 					System.out.printf("Parse tree: %n%s%n",

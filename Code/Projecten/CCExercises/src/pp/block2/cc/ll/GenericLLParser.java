@@ -31,7 +31,7 @@ public class GenericLLParser implements Parser {
 
 	public GenericLLParser(Grammar g) {
 		this.g = g;
-		this.calc = null; // TODO Instantiate your LLCalc-implementation
+		this.calc = new MyLLCalc(g); // TODO Instantiate your LLCalc-implementation
 	}
 
 	@Override
