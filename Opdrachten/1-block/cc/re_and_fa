@@ -1,0 +1,11 @@
+
+
+(s0) --[a..z][A..Z]--> ((s1)) --[0..9][a..z][A..Z]--> ((s2)) --[0..9][a..z][A..Z]--< (loop back)
+
+(" (")* ")+
+
+La: L (a)+ ( )*
+La La: (twice the above)
+La La La Li (La La + La + Li ( )*
+
+

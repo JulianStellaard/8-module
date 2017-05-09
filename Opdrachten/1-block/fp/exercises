@@ -1,0 +1,9 @@
+Ex 1
+Prelude> f x = 2*x^2 + 3*x + 5
+f :: Num a => a -> a
+
+
+Ex 2
+import Data.Char
+code a n | 91 <= ord a && ord a <= (122 - n) = chr (ord a + n) | (122 - n) <= ord a && ord a <= 122 = chr(ord a - (26 - n)) | 65 <= ord a && ord a <= (90 - n) = chr (ord a + n) | (90 - n) <= ord a && ord a <= 90 = chr (ord a - (26 - n)) | otherwise = a
+
